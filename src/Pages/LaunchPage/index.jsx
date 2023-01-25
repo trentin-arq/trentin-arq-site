@@ -7,7 +7,7 @@ export default function LaunchPage(){
       <div className='info-container'>
         <img src="../images/logo.jpeg" alt="logo" className='launch-page-image'/>
         <div className='titles-container'>
-          <h2 className='launch-page-title'>Escritório de arquitetura comtemporânea</h2>
+          <h2 className='launch-page-title'>Escritório de arquitetura contemporânea</h2>
           <h2 className='launch-page-subtitle'>Arquitetura | Interiores | Execução</h2>
         </div>
 
