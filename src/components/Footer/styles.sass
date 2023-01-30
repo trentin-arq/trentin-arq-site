@@ -1,0 +1,44 @@
+@use '../../styles/sass/variables'
+  
+.footer
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  background-color: black
+  color: white
+  gap: 64px
+  align-items: center
+  justify-content: space-between
+  width: 100%
+  padding: variables.$padding-medium
+
+  .logo-container
+    display: flex
+    flex-direction: column
+    justify-self: flex-start
+
+    >.rights-reserved
+      color: variables.$gray-300
+      font-size: variables.$font-size-small
+  
+  .footer-contacts
+    display: flex
+    flex-direction: column
+    gap: 12px
+    align-items: center
+    justify-content: center
+
+    >.social-links
+      display: flex
+      gap: 16px
+  
+  .infos-container
+    display: flex
+    flex-direction: column
+    line-height: 30px
+    font-weight: 200
+
+    >.-info
+      display: flex
+      gap: 8px
+      align-items: center
