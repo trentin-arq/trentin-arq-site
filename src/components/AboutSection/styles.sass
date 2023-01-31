@@ -1,0 +1,38 @@
+@use '../../styles/sass/variables'
+
+.about-section
+  display: flex
+  justify-content: flex-end
+  padding: variables.$padding-large
+
+  .infos-container
+    padding: variables.$padding-large
+    display: flex
+    flex-direction: column
+    gap: 16px
+    justify-content: center
+    align-items: flex-end
+
+    .about-title
+      font-family: variables.$secondary-font
+      font-size: 48px
+      font-weight: 600
+    
+    .about-paragraph
+      width: 600px
+      text-align: right
+      font-size: 18px
+
+    .about-link-redirect
+      color: #fff
+      background-color: #000
+      text-decoration: none
+      padding: variables.$padding-small
+      font-weight: 400
+      font-size: 18px
+      transition: .4s
+    
+    .about-link-redirect:hover
+      background-color: variables.$gray-300
+      border-radius: 8px
+

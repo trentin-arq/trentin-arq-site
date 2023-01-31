@@ -1,0 +1,41 @@
+@use '../../styles/sass/variables'
+
+.swiper
+  height: 420px
+
+.swiper-button-prev, .swiper-button-next
+  color: #fff
+
+.swiper-pagination-bullet
+  color: #fff
+  background-color: #fff
+
+.banners-carousel
+  padding: variables.$padding-medium
+  background-color: #000
+  color: white
+
+  .banner-carousel-item
+    padding: 0 variables.$padding-extra-large
+
+    >.image-container
+      display: flex
+      postition: relative
+      
+      >.banner-infos
+        position: absolute
+        padding: variables.$padding-small
+        left: 28%
+
+        .banner-title
+          font-family: variables.$secondary-font
+          font-weight: 600
+          font-size: 72px
+        
+        .banner-paragraph
+          position: absolute
+          left: 200px
+          width: 500px
+          font-size: variables.$font-size-large
+          font-weight: 200
+          margin-top: variables.$margin-large
