@@ -5,10 +5,11 @@ import './styles.sass'
 export default function Header(){
   return(
     <header className="header">
-      <img src='../images/top-logo.png' alt='logo' width={200}/>
+      <img src='../images/logo-bg.png' alt='logo' width={200}/>
       <nav className='menus'>
-        <Link to={'projetos'} className='menu-item'>Projetos</Link>
-        <Link to={'contato'} className='menu-item'>Contatos</Link>
+        <Link to={'arquitetura'} className='menu-item'>Arquitetura</Link>
+        <Link to={'interiores'} className='menu-item'>Interiores</Link>
+        <Link to={'contato'} className='menu-item'>Contato</Link>
         <Link to={'sobre'} className='menu-item'>Sobre</Link>
       </nav>
     </header>
