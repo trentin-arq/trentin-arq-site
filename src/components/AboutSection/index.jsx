@@ -9,7 +9,7 @@ export default function AboutSection(){
         <p className='about-paragraph'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sed dolorem excepturi, esse, cum inventore fuga, minima nam architecto officiis facilis non nobis dignissimos doloremque mollitia hic nihil velit natus?</p>
         <Link to={'sobre'} className='about-link-redirect'>Conheça nossa história</Link>
       </div>
-      <img src='../images/planning.jpg' alt='planejamento' loading='lazy' width={400}/>
+      <img src='../images/planning.jpg' alt='planejamento' loading='lazy' width={400} className='about-section-image'/>
     </section>
   )
 }

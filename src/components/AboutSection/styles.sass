@@ -36,3 +36,22 @@
       background-color: variables.$gray-300
       border-radius: 8px
 
+@media (max-width: variables.$mobile-breakpoint)
+  .about-section
+    flex-direction: column
+    align-content: center
+    justify-content: center
+
+    .infos-container
+      width: 100%
+      padding: 0
+
+      .about-paragraph
+        width: 100%
+        font-size: variables.$font-size-medium
+      
+    .about-section-image
+      margin-top: variables.$margin-large
+      width: 310px
+
+

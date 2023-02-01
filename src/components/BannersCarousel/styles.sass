@@ -21,7 +21,7 @@
     >.image-container
       display: flex
       postition: relative
-      
+
       >.banner-infos
         position: absolute
         padding: variables.$padding-small
@@ -39,3 +39,37 @@
           font-size: variables.$font-size-large
           font-weight: 200
           margin-top: variables.$margin-large
+
+@media(max-width: variables.$mobile-breakpoint)
+  .swiper
+    height: 648px
+    margin-top: variables.$padding-medium
+  
+  .swiper-button-prev, .swiper-button-next
+    display: none
+
+  .banners-carousel
+    .banner-carousel-item
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+
+      .image-container
+        display: flex
+        flex-direction: column
+      
+        .image-carousel
+          width: 300px
+
+        .banner-infos
+          position: inherit
+
+          .banner-title
+            font-size: variables.$font-size-extra-large
+            padding-top: variables.$padding-medium
+          
+          .banner-paragraph
+            font-size: variables.$font-size-medium
+            position: inherit
+            width: 200px
