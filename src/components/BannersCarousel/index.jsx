@@ -25,7 +25,7 @@ export default function BannersCarousel(){
       <SwiperSlide>
         <div  className='banner-carousel-item'>
           <div className='image-container'>
-            <img src='../images/carousel/casa_jm.jpg' width={defaultWidthImage} loading='lazy'/>
+            <img src='../images/carousel/casa_jm.jpg' width={defaultWidthImage} loading='lazy' className='image-carousel'/>
             <div className='banner-infos'>
               <h2 className='banner-title'>Texto de título</h2>
               <p className='banner-paragraph'>Texto de descrição Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente corporis, ipsum et doloremque incidunt.</p>
@@ -36,7 +36,7 @@ export default function BannersCarousel(){
       <SwiperSlide>
         <div  className='banner-carousel-item'>
           <div className='image-container'>
-            <img src='../images/carousel/living.jpg' width={defaultWidthImage} loading='lazy'/>
+            <img src='../images/carousel/living.jpg' width={defaultWidthImage} loading='lazy' className='image-carousel'/>
             <div className='banner-infos'>
               <h2 className='banner-title'>Texto de título</h2>
               <p className='banner-paragraph'>Texto de descrição Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente corporis, ipsum et doloremque incidunt.</p>
@@ -47,7 +47,7 @@ export default function BannersCarousel(){
       <SwiperSlide>
         <div  className='banner-carousel-item'>
           <div className='image-container'>
-            <img src='../images/carousel/interiores.jpg' width={defaultWidthImage} loading='lazy'/>
+            <img src='../images/carousel/casaqui.jpg' width={defaultWidthImage} loading='lazy' className='image-carousel'/>
             <div className='banner-infos'>
               <h2 className='banner-title'>Texto de título</h2>
               <p className='banner-paragraph'>Texto de descrição Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente corporis, ipsum et doloremque incidunt.</p>

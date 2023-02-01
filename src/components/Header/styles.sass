@@ -22,4 +22,22 @@
     >.menu-item:hover
       text-decoration: underline 
       color: variables.$gray-300
+
+@media ( max-width: variables.$mobile-breakpoint )
+  .header
+    flex-wrap: wrap
+    flex-direction: row
+    align-items: center
+    justify-content: center 
+
+    .logo-header
+      width: 50px
+
+    .menus
+      width: 100%
+      gap: 16px
+      text-align: right
+      justify-content: center
+      align-items: center
+  
   
