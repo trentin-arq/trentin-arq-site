@@ -1,0 +1,81 @@
+@use '../../styles/sass/variables'
+
+.architecture-section
+  padding: variables.$padding-extra-large
+  display: flex
+  flex-wrap: wrap
+
+  .section-infos
+    margin-top: 50px
+
+    .title-container
+      display: flex
+      margin-left: -136px
+
+      .-first
+        color: #fff  
+    
+    .section-subtitle
+      font-size: 44px
+      width: 400px
+      padding-left: variables.$padding-medium
+      font-weight: 500
+    
+    .section-links
+      display: flex
+      flex-direction: column
+      gap: 16px
+      padding: variables.$padding-medium
+
+      .redirect-button
+        background-color: #000
+        padding: variables.$padding-small
+        text-align: center
+        color: #fff
+        text-decoration: none
+        font-weight: 500
+        transition: .4s
+      
+      .redirect-button:hover
+        background-color: #6277A9
+        border-radius: 8px
+      
+      .external-link
+        color: #000
+        font-weight: 500
+        text-align: center
+        font-size: variables.$font-size-medium
+
+@media (max-width: variables.$mobile-breakpoint)
+  .architecture-section
+    flex-direction: column
+    padding: 0
+
+    .image-container
+      position: relative
+      width: 100%
+
+      .architecture-image
+        width: 100%
+
+    .section-infos
+      margin-top: 24px
+
+      .title-container
+        margin: 0
+        width: 100%
+        padding: 0 variables.$padding-medium
+
+      .architecture-section-title
+        font-size: variables.$font-size-extra-large
+        color: #000
+      
+      .-first
+        color: #000 !important
+      
+      .section-subtitle
+        font-size: variables.$font-size-large
+        width: 100%
+
+
+
