@@ -65,9 +65,12 @@
     padding: 0
     margin: 0
     height: 970px
+    overflow-x: hidden
+    overflow-y: hidden
 
     .section-background
       position: relative
+      height: 100%
 
       .image-container
         width: 100%
@@ -76,12 +79,20 @@
           width: 100%
 
       .section-infos
-        margin-top: 24px
+        margin-top: 0
 
         .title-container
-          margin: 0
           width: 100%
           padding: variables.$padding-medium
+          margin: auto
+          display: flex
+          align-items: center
+          justify-content: center
+
+        .section-subtitle
+          font-size: 20px !important
+          text-align: center
+          padding: 0
 
         .architecture-section-title
           font-size: variables.$font-size-extra-large
