@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper'
-import { GrFormNext, GrFormPrevious } from 'react-icons/gr'
+import { Link } from 'react-router-dom'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
@@ -18,7 +18,8 @@ export default function BannersCarousel(){
       autoplay={true}
       delay={7000}
       pagination={{
-        type: 'bullets'
+        type: 'bullets',
+        clickable: true
       }}
       loop={true}
     >
@@ -27,8 +28,11 @@ export default function BannersCarousel(){
           <div className='image-container'>
             <img src='../images/carousel/casa_jm.jpg' width={defaultWidthImage} loading='lazy' className='image-carousel'/>
             <div className='banner-infos'>
-              <h2 className='banner-title'>Texto de título</h2>
-              <p className='banner-paragraph'>Texto de descrição Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente corporis, ipsum et doloremque incidunt.</p>
+              <h2 className='banner-title'>Transformando moradias</h2>
+              <p className='banner-paragraph'>Estamos sempre em busca de transformar projetos e realizar sonhos.</p>
+            <a href='https://api.whatsapp.com/send/?phone=5551997283636&text&type=phone_number&app_absent=0' target='_blank' rel='external' className='banner-carousel-link -button'>
+              Realize o seu projeto
+            </a>
             </div>
           </div>
         </div>
@@ -38,8 +42,9 @@ export default function BannersCarousel(){
           <div className='image-container'>
             <img src='../images/carousel/living.jpg' width={defaultWidthImage} loading='lazy' className='image-carousel'/>
             <div className='banner-infos'>
-              <h2 className='banner-title'>Texto de título</h2>
-              <p className='banner-paragraph'>Texto de descrição Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente corporis, ipsum et doloremque incidunt.</p>
+              <h2 className='banner-title'>Design de interiores</h2>
+              <p className='banner-paragraph'>Trazendo personalidade, novas experiências e conforto</p>
+              <Link to={'/interiores'} className='banner-carousel-link'>Conheça todos os designs</Link>
             </div>
           </div>
         </div>
@@ -49,8 +54,9 @@ export default function BannersCarousel(){
           <div className='image-container'>
             <img src='../images/carousel/casaqui.jpg' width={defaultWidthImage} loading='lazy' className='image-carousel'/>
             <div className='banner-infos'>
-              <h2 className='banner-title'>Texto de título</h2>
-              <p className='banner-paragraph'>Texto de descrição Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente corporis, ipsum et doloremque incidunt.</p>
+              <h2 className='banner-title'>Criatividade e autenticidade</h2>
+              <p className='banner-paragraph'>Conheça todos os nosso projetos, pensados sob medida.</p>
+              <Link to={'/arquitetura'} className='banner-carousel-link'>Confira</Link>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@
   height: 420px
 
 .swiper-button-prev, .swiper-button-next
-  color: #fff
+  display: none
 
 .swiper-pagination-bullet
   color: #fff
@@ -39,6 +39,28 @@
           font-size: variables.$font-size-large
           font-weight: 200
           margin-top: variables.$margin-large
+        
+        .banner-carousel-link
+          position: absolute
+          left: 200px
+          bottom: -130px
+          color: #fff
+          font-size: 18px
+          font-weight: 500
+        
+        .-button
+          background-color: variables.$blue-900
+          text-decoration: none
+          padding: 8px
+          width: 300px
+          text-align: center
+          transition: .4s
+        
+        .-button:hover
+          border-radius: 8px
+          transform: scale(1.05)
+        
+        
 
 @media(max-width: variables.$mobile-breakpoint)
   .swiper
@@ -49,6 +71,7 @@
     display: none
 
   .banners-carousel
+    height: 700px
     .banner-carousel-item
       display: flex
       flex-direction: column
@@ -66,10 +89,15 @@
           position: inherit
 
           .banner-title
-            font-size: variables.$font-size-extra-large
+            font-size: 36px
             padding-top: variables.$padding-medium
           
           .banner-paragraph
             font-size: variables.$font-size-medium
             position: inherit
             width: 200px
+            margin-bottom: 20px
+          
+          .banner-carousel-link
+            position: inherit
+            font-size: variables.$font-size-medium

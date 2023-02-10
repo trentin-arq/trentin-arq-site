@@ -5,6 +5,7 @@
   justify-content: flex-end
   align-items: flex-end
   padding: variables.$padding-large
+  margin-top: 150px
 
   .infos-container
     padding: variables.$padding-large
@@ -34,7 +35,7 @@
       transition: .4s
     
     .about-link-redirect:hover
-      background-color: #6277A9
+      background-color: variables.$blue-900
       border-radius: 8px
 
 @media (max-width: variables.$mobile-breakpoint)
@@ -42,6 +43,7 @@
     flex-direction: column
     align-content: center
     justify-content: center
+    margin: 0
 
     .infos-container
       width: 100%

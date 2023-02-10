@@ -4,11 +4,11 @@ import './styles.sass'
 
 export default function AboutSection(){
   return(
-    <Fade right>
+    <Fade up>
       <section className='about-section'>
         <div className='infos-container'>
           <h2 className='about-title'>Sobre nós</h2>
-          <p className='about-paragraph'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sed dolorem excepturi, esse, cum inventore fuga, minima nam architecto officiis facilis non nobis dignissimos doloremque mollitia hic nihil velit natus?</p>
+          <p className='about-paragraph'>Com projetos de design autoral e alto nível de apresentação gráfica, buscamos também a todo tempo, a concretização em obra do sonho de cada cliente.</p>
           <Link to={'sobre'} className='about-link-redirect'>Conheça nossa história</Link>
         </div>
         <img src='../images/planning.jpg' alt='planejamento' loading='lazy' width={400} className='about-section-image'/>

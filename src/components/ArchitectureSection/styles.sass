@@ -4,78 +4,99 @@
   padding: variables.$padding-extra-large
   display: flex
   flex-wrap: wrap
+  background-color: variables.$blue-700
+  color: white
+  position: relative
+  height: 500px
+  margin-bottom: 80px
 
-  .section-infos
-    margin-top: 50px
+  .section-background
+    position: absolute
+    bottom: -64px
+    display: flex
+    flex-wrap: wrap
 
-    .title-container
-      display: flex
-      margin-left: -136px
+    .section-infos
+      margin-top: 50px
 
-      .-first
-        color: #fff  
-    
-    .section-subtitle
-      font-size: 44px
-      width: 400px
-      padding-left: variables.$padding-medium
-      font-weight: 500
-    
-    .section-links
-      display: flex
-      flex-direction: column
-      gap: 16px
-      padding: variables.$padding-medium
+      .title-container
+        display: flex
+        margin-left: -136px
 
-      .redirect-button
-        background-color: #000
-        padding: variables.$padding-small
-        text-align: center
-        color: #fff
-        text-decoration: none
-        font-weight: 500
-        transition: .4s
+        .-first
+          color: #fff  
       
-      .redirect-button:hover
-        background-color: #6277A9
-        border-radius: 8px
-      
-      .external-link
-        color: #000
+      .section-subtitle
+        font-size: 44px
+        width: 400px
+        padding-left: variables.$padding-medium
         font-weight: 500
-        text-align: center
-        font-size: variables.$font-size-medium
+      
+      .section-links
+        display: flex
+        flex-direction: column
+        gap: 16px
+        padding: variables.$padding-medium
+
+        .redirect-button
+          background-color: #000
+          padding: variables.$padding-small
+          text-align: center
+          color: #fff
+          text-decoration: none
+          font-weight: 500
+          transition: .4s
+          font-size: 20px
+          padding: variables.$padding-small 12px
+        
+        .redirect-button:hover
+          background-color: variables.$blue-900
+          border-radius: 8px
+        
+        .external-link
+          color: #000
+          font-weight: 500
+          text-align: center
+          font-size: variables.$font-size-medium
 
 @media (max-width: variables.$mobile-breakpoint)
   .architecture-section
     flex-direction: column
     padding: 0
+    margin: 0
+    height: 970px
 
-    .image-container
+    .section-background
       position: relative
-      width: 100%
 
-      .architecture-image
+      .image-container
         width: 100%
 
-    .section-infos
-      margin-top: 24px
+        .architecture-image
+          width: 100%
 
-      .title-container
-        margin: 0
-        width: 100%
-        padding: 0 variables.$padding-medium
+      .section-infos
+        margin-top: 24px
 
-      .architecture-section-title
-        font-size: variables.$font-size-extra-large
-        color: #000
-      
-      .-first
-        color: #000 !important
-      
-      .section-subtitle
-        font-size: variables.$font-size-large
-        width: 100%
+        .title-container
+          margin: 0
+          width: 100%
+          padding: variables.$padding-medium
+
+        .architecture-section-title
+          font-size: variables.$font-size-extra-large
+          color: #fff
+        
+        .-first
+          color: #FFF !important
+        
+        .section-subtitle
+          font-size: variables.$font-size-large
+          width: 100%
+
+        .section-links
+          .external-link
+            color: #fff !important
 
 
 
