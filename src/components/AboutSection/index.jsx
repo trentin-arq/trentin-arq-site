@@ -11,7 +11,7 @@ export default function AboutSection(){
           <p className='about-paragraph'>Com projetos de design autoral e alto nível de apresentação gráfica, buscamos também a todo tempo, a concretização em obra do sonho de cada cliente.</p>
           <Link to={'sobre'} className='about-link-redirect'>Conheça nossa história</Link>
         </div>
-        <img src='../images/planning.jpg' alt='planejamento' loading='lazy' width={400} className='about-section-image'/>
+        <img src='../images/about-home.png' alt='planejamento' loading='lazy' width={350} className='about-section-image'/>
       </section>
     </Fade>
   )
