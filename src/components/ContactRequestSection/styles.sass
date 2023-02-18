@@ -1,0 +1,58 @@
+@use '../../styles/sass/variables'
+
+.contact-request
+  padding: variables.$padding-large
+  width: 50%
+
+  .contact-request-form
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 100%
+    gap: 16px
+
+    .form-input
+      width: 400px
+      height: 38px
+      padding: 0 variables.$padding-small
+      border: 2px solid #000
+      outline: 0
+    
+    .form-input:focus, .form-text-area:focus
+      border: 2px solid variables.$blue-500
+    
+    .form-text-area
+      width: 400px
+      padding: variables.$padding-small
+      border: 2px solid #000
+      outline: 0
+    
+    .form-button
+      width: 400px
+      padding: variables.$padding-small
+      border: none
+      background-color: #000
+      color: #fff
+      font-size: 18px
+      font-weight: 500
+      transition: .3s
+      cursor: pointer
+
+    .form-button:hover
+      background-color: #676767
+    
+    .form-button:active
+      transform: scale(0.9)
+    
+    .confirmation-message
+      color: variables.$blue-700
+      font-weight: 500
+
+@media (max-width: variables.$mobile-breakpoint)
+  .contact-request
+    width: 100%
+    .contact-request-form
+      .form-input, .form-text-area, .form-button
+        width: 95%
+

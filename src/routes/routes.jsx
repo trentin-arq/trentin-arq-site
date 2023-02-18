@@ -16,7 +16,7 @@ export default function RouterApp(){
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/lancamento' element={<LaunchPage/>}/>
-          <Route path='/arquitetura' element={<Projects/>}/>
+          <Route path='/projetos' element={<Projects/>}/>
           <Route path='/sobre' element={<About/>}/>
           <Route path='/contato' element={<Contact/>}/>
           <Route path='/interiores' element={<Interiors/>}/>

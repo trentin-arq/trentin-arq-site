@@ -33,14 +33,14 @@ export default function Footer(){
       </div>
 
       <div className='infos-container'>
-        <span className='adress'> Rua XXX, 999 - Bairro X / Campo Bom </span>
+        <span className='adress'> Rua Wofram Nicolau Metzler nº 157, Bairro Metzler - Campo Bom/RS </span>
         <span className='phone -info'>
           <BsFillTelephoneFill color='#fff'/>
-          (51)99999-9999
+          (51) 99728-3636
         </span>
         <span className='email -info'>
           <GrMail color='#fff'/>
-          trentinarq@gmail.com
+          contato@trentinarquitetura.com.br
         </span>
       </div>
 
