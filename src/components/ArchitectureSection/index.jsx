@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom'
 import './styles.sass'
-import Fade from 'react-reveal'
+import ActionButton from '../ActionButton'
 
 export default function ArchitectureSection(){
   return(
-    <Fade left>
       <section className='architecture-section'>
         <div className='section-background'>
           <div className='image-container'>
@@ -23,19 +22,14 @@ export default function ArchitectureSection(){
               Criando e concretizando sonhos. Transformando o jeito de morar.
             </h3>
             <div className='section-links'>
-              <a 
-                href='https://api.whatsapp.com/send/?phone=5551997283636&text&type=phone_number&app_absent=0'
-                target='_blank'
-                rel='external'
-                className='redirect-button'
-              >
-                Entre em contato e planeje seu imóvel
-              </a>
+              <ActionButton
+                external={true}
+                buttonText="Planeje o seu imóvel"
+              />
               <Link to={'/arquitetura'} className='external-link'>Conheça todos os projetos</Link>
             </div>
           </div>
         </div>
       </section>
-    </Fade>
   )
 }

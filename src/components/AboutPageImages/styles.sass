@@ -1,0 +1,26 @@
+@use '../../styles/sass/variables'
+
+.about-page-images
+  display: flex
+  align-items: center
+  width: 100%
+  padding: variables.$padding-medium
+  gap: 16px
+
+  .definitions
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 320px
+    text-align: center
+
+    .about-image
+      margin-bottom: variables.$margin-medium
+
+    .definition-text
+      font-size: 14px
+
+@media (max-width: variables.$mobile-breakpoint)
+  .about-page-images
+    flex-direction: column
