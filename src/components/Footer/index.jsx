@@ -45,10 +45,10 @@ export default function Footer(){
       </div>
 
       <div className='agency-container'>
-        <span className='agency-text'>Design e desenvolvimento</span>
         <a href='https://www.zeelabtech.com.br' target='_blank' rel='external'>
           <img src='../icons/logo-svg-branco.svg' alt='zeelab icon' width={90} className='agency-icon'/>
         </a>
+        <span className='agency-text'>Design e desenvolvimento</span>
       </div>
     </section>
   )

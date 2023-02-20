@@ -1,5 +1,10 @@
+import PrjectsList from "../../components/ProjectsList"
+
 export default function Projects(){
   return(
-    <div>tela de projetos</div>
+    <main>
+      <div>tela de projetos</div>
+      <PrjectsList/>
+    </main>
   )
 }

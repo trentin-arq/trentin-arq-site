@@ -6,10 +6,7 @@ export default function Header(){
   return(
     <header className="header">
       <Link to={'/'}>
-        <picture>
-        <source srcSet='../images/logo-mobile.png' media='(max-width: 768px)'/>
-        <img src='../images/logo-bg.png' alt='logo' width={200} className='logo-header'/>
-        </picture>
+        <img src="../images/top-logo.png" alt="" width={200} className="logo-header"/>
       </Link>
 
       <nav className='menus'>

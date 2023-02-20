@@ -3,6 +3,8 @@ import ActionButton from '../ActionButton'
 import './styles.sass'
 
 export default function InteriorsSection(){
+
+
   return(
       <section className='interiors-section'>
         <div className='image-container'>
