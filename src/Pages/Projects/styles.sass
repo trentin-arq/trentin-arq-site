@@ -1,0 +1,61 @@
+@use '../../styles/sass/variables'
+
+.projects-list
+  display: flex
+  flex-direction: column
+  padding: 0 variables.$padding-extra-large
+
+  >.section-title
+    font-size: 64px
+    margin-bottom: variables.$margin-large
+  
+  .project-cards-container
+    display: flex
+    flex-direction: row
+    gap: 16px
+    flex-wrap: wrap
+    width: 100%
+
+    .project-card
+      width: 360px
+      padding: variables.$padding-medium 0
+      text-decoration: none
+      display: flex
+      justify-content: center
+      transition: .3s ease-in-out
+
+      .project-title-container
+        padding: variables.$padding-medium 0
+        display: flex
+        gap: 8px
+        align-items: center
+        color: #000
+      
+      .project-card-adress
+        display: flex
+        align-items: center
+        gap: 12px
+
+        .project-adress
+          color: #000
+          font-size: 14px
+          font-weight: 500
+  
+  .project-card:hover
+    .project-thumb
+      transition: .3s ease-in-out
+      opacity: 80%
+      
+    .project-title-container
+      .project-icon
+        transition: .3s
+        margin-left: 10px
+
+@media (max-width: variables.$mobile-breakpoint)
+  .projects-list
+      padding: 0 variables.$padding-medium
+
+      >.section-title
+        text-align: center
+      
+

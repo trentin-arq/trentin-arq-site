@@ -7,7 +7,7 @@ import "./styles.sass"
 
 const GET_PROJECTS = gql`
   query getProjects{
-    projects{
+    projects(where: {category: "desenvolvimento"}) {
       id
       title
       thumb {
@@ -23,13 +23,13 @@ const GET_PROJECTS = gql`
   }
 `
 
-export default function Projects(){
+export default function DevelopmentProjects(){
   const {loading, error, data} = useQuery(GET_PROJECTS)
   return(
     <main>
-      <section className="projects-list">
+      <section className="architecture-projects-list">
         <ProjectsMenu/>
-        <h1 className="section-title">Todos os projetos</h1>
+        <h1 className="section-title">Em desenvolvimento</h1>
         <div className="project-cards-container">
           {
             data && data.projects.map((element, index) => {
