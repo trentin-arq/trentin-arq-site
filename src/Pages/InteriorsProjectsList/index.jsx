@@ -27,7 +27,7 @@ export default function InteriorsProjectsList(){
   const {loading, error, data} = useQuery(GET_PROJECTS)
   return(
     <main>
-      <section className="architecture-projects-list">
+      <section className="interiors-projects-list">
         <ProjectsMenu/>
         <h1 className="section-title">Interiores</h1>
         <div className="project-cards-container">

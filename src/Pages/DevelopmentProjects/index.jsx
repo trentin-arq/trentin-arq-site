@@ -27,7 +27,7 @@ export default function DevelopmentProjects(){
   const {loading, error, data} = useQuery(GET_PROJECTS)
   return(
     <main>
-      <section className="architecture-projects-list">
+      <section className="development-projects-list">
         <ProjectsMenu/>
         <h1 className="section-title">Em desenvolvimento</h1>
         <div className="project-cards-container">

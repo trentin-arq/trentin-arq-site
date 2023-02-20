@@ -9,7 +9,6 @@
   color: white
   border-bottom: solid 1px #c6c6c6
   
-
   .project-menu-item
     color: #000
     font-weight: 700
@@ -23,3 +22,10 @@
     &:hover
       color: #fff
       box-shadow: inset 200px 0 0 0 #000
+
+@media (max-width: variables.$mobile-breakpoint)
+  .projects-menu
+    gap: 0
+    align-items: center
+    justify-content: center
+    flex-direction: column

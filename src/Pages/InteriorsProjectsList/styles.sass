@@ -1,6 +1,6 @@
 @use '../../styles/sass/variables'
 
-.architecture-projects-list
+.interiors-projects-list
   display: flex
   flex-direction: column
   padding: 0 variables.$padding-extra-large
@@ -50,3 +50,24 @@
       .project-icon
         transition: .3s
         margin-left: 10px
+
+@media (max-width: variables.$mobile-breakpoint)
+  .interiors-projects-list
+      padding: 0 variables.$padding-medium
+
+      >.section-title
+        font-size: 48px
+        text-align: center
+        padding-top: variables.$padding-medium
+
+      .project-cards-container
+        justify-content: center
+        align-items: center
+
+        .project-card-infos
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: center
+      
+
