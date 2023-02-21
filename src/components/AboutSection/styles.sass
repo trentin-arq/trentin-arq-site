@@ -4,8 +4,8 @@
   display: flex
   justify-content: flex-end
   align-items: center
-  padding: variables.$padding-large
-  margin-top: 150px
+  padding: variables.$padding-extra-large
+  margin-top: 50px
 
   .infos-container
     padding: variables.$padding-large
@@ -41,6 +41,8 @@
 
 @media (max-width: variables.$mobile-breakpoint)
   .about-section
+    margin-top: 34px !important
+    padding: variables.$padding-medium
     flex-direction: column
     align-content: center
     justify-content: center

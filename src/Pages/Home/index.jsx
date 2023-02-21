@@ -7,8 +7,8 @@ export default function Home(){
   return(
     <main>
       <BannersCarousel/>
-      <InteriorsSection/>
       <ArchitectureSection/>
+      <InteriorsSection/>
       <AboutSection/>
     </main>
   )

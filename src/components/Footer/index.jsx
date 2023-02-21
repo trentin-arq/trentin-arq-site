@@ -7,7 +7,6 @@ export default function Footer(){
     <section className='footer'>
       <div className='logo-container'>
         <img src='../images/logo-bg.png' alt='logo' className='logo-footer' width={180}/>
-        <span className='rights-reserved'>2023 - Trentin Arquitetura © todos os direitos reservados</span>
       </div>
 
       <div className='footer-contacts'>
@@ -45,10 +44,16 @@ export default function Footer(){
       </div>
 
       <div className='agency-container'>
-        <a href='https://www.zeelabtech.com.br' target='_blank' rel='external'>
-          <img src='../icons/logo-svg-branco.svg' alt='zeelab icon' width={90} className='agency-icon'/>
-        </a>
-        <span className='agency-text'>Design e desenvolvimento</span>
+        <div className='agency'>
+          <a href='https://www.zeelabtech.com.br' target='_blank' rel='external'>
+            <img src='../icons/logo-svg-branco.svg' alt='zeelab icon' width={90} className='agency-icon'/>
+          </a>
+          <span className='agency-text'>Design e desenvolvimento</span>
+        </div>
+
+        <div className='terms'>
+          <span className='rights-reserved'>2023 - Trentin Arquitetura © todos os direitos reservados</span>
+        </div>
       </div>
     </section>
   )

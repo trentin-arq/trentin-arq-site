@@ -6,8 +6,7 @@ export default function ScrollRevealProvider({children, style}, props){
   useEffect(() => {
     if(sectinonRef.current){
       scrollReveal().reveal(sectinonRef.current, {
-        reset: true,
-        delay: 500
+        delay: 300
       })
     }
   },[])

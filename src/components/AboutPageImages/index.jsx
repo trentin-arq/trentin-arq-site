@@ -4,7 +4,7 @@ export default function AboutPageImages(){
   return(
     <div className="about-page-images">
       <div className="definitions">
-        <img src="../images/murilo.png" alt="murilo-trentin" loading="lazy" className="about-image"/>
+        <img src="../images/murilo.jpg" alt="murilo-trentin" loading="lazy" className="about-image"/>
         <h3 className="name">Murilo Trentin</h3>
         <span className="definition-text">Arquiteto Diretor/Fundador</span>
         <span className="definition-text">Diretor criativo de projetos</span>

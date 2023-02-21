@@ -16,11 +16,8 @@
     display: flex
     flex-direction: column
     justify-self: flex-start
+    align-items: center
 
-    >.rights-reserved
-      color: variables.$gray-300
-      font-size: variables.$font-size-small
-  
   .footer-contacts
     display: flex
     flex-direction: column
@@ -36,7 +33,8 @@
     display: flex
     flex-direction: column
     line-height: 30px
-    font-weight: 200
+    font-weight: 500
+    font-size: 16px
 
     >.-info
       display: flex
@@ -44,17 +42,25 @@
       align-items: center
     
     .adress
-      max-width: 400px
-      font-size: 14px
+      max-width: 540px
+      font-size: 12px
   
   .agency-container
     display: flex
     align-items: center
-    justify-content: flex-start
-    gap: 8px
+    justify-content: space-between
     width: 100%
 
-    .agency-text
+    .agency
+      display: flex
+      align-items: center
+      gap: 8px
+
+      .agency-text
+        font-size: variables.$font-size-small
+    
+    .terms
+      color: variables.$gray-300
       font-size: variables.$font-size-small
 
 @media (max-width: variables.$mobile-breakpoint)
@@ -70,7 +76,8 @@
       justify-content: center
       align-items: center
       text-align: center
-    
+      flex-direction: column-reverse
+      gap: 18px
     
     .infos-container
       justify-content: center
@@ -78,6 +85,7 @@
 
     .adress
       text-align: center
+      font-size: 14px !important
 
     .footer-contacts
       text-align: center
