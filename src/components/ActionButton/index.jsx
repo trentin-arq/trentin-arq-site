@@ -3,7 +3,7 @@ import "./styles.sass"
 
 export default function ActionButton(props){
   const {buttonText, buttonLink, external} = props
-  const defaultLink = "https://api.whatsapp.com/send/?phone=5551997283636&text&type=phone_number&app_absent=0"
+  const defaultLink = import.meta.env.VITE_WHATSAPP_LINK
   
   return(
     <>

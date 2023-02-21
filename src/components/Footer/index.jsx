@@ -22,7 +22,7 @@ export default function Footer(){
             <BsInstagram color='#fff' size={28}/>
           </a>
           <a 
-            href='https://api.whatsapp.com/send/?phone=5551997283636&text&type=phone_number&app_absent=0'
+            href={import.meta.env.VITE_WHATSAPP_LINK}
             target='_blank' 
             rel='external'
             className='social-link'

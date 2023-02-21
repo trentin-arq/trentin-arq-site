@@ -1,8 +1,10 @@
 import './styles.sass'
 import ActionButton from '../ActionButton'
+import ScrollRevealProvider from '../ScrollRevealProvider'
 
 export default function AboutSection(){
   return(
+    <ScrollRevealProvider>
       <section className='about-section'>
         <div className='infos-container'>
           <h2 className='about-title'>Sobre nós</h2>
@@ -14,5 +16,6 @@ export default function AboutSection(){
         </div>
         <img src='../images/about-home.png' alt='planejamento' loading='lazy' width={350} className='about-section-image'/>
       </section>
+    </ScrollRevealProvider>
   )
 }

@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 import ActionButton from '../ActionButton'
+import ScrollRevealProvider from '../ScrollRevealProvider'
 import './styles.sass'
 
 export default function InteriorsSection(){
-
-
   return(
+    <ScrollRevealProvider>
       <section className='interiors-section'>
         <div className='image-container'>
           <img src='../images/interiores.jpg' alt='interiores' width={330} className='section-image'/>
@@ -23,5 +23,6 @@ export default function InteriorsSection(){
           </div>
         </div>
       </section>
+    </ScrollRevealProvider>
   )
 }

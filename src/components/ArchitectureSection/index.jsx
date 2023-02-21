@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
 import './styles.sass'
 import ActionButton from '../ActionButton'
+import ScrollRevealProvider from "../ScrollRevealProvider"
 
 export default function ArchitectureSection(){
   return(
+    <ScrollRevealProvider>
       <section className='architecture-section'>
         <div className='section-background'>
           <div className='image-container'>
@@ -31,5 +33,6 @@ export default function ArchitectureSection(){
           </div>
         </div>
       </section>
+    </ScrollRevealProvider>
   )
 }
