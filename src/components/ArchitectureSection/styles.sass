@@ -2,56 +2,53 @@
 
 .architecture-section
   padding: variables.$padding-extra-large
-  display: flex
-  flex-wrap: wrap
   background-color: variables.$blue-700
-  color: white
-  position: relative
-  height: 500px
+  height: 460px
   margin-top: 90px
   margin-bottom: 80px
   box-shadow: 0 9px 18px #00000086
+  position: relative
 
   .section-background
-    position: absolute
-    bottom: -64px
-    display: flex
-    flex-wrap: wrap
+      display: flex
+      flex-direction: row
+      width: 100%
+      height: 100%
+      bottom: -50px
+      color: white
+      position: absolute
 
-    .section-infos
-      margin-top: 50px
+  .section-infos
+    .title-container
+      width: 300px
+      margin-left: -60px
 
-      .title-container
-        display: flex
-        margin-left: -136px
-
-        .-first
-          color: #fff  
+    .section-subtitle
+      font-size: 28px
+      width: 430px
+      padding: variables.$padding-large variables.$padding-medium
+      font-weight: 500
+      padding-top: variables.$padding-medium
+    
+    .section-links
+      display: flex
+      flex-direction: column
+      padding: variables.$padding-medium
+      margin-top: -30px
       
-      .section-subtitle
-        font-size: 44px
-        width: 400px
-        padding-left: variables.$padding-medium
+      >.external-link
+        width: 320px
+        color: #000
         font-weight: 500
-      
-      .section-links
-        display: flex
-        flex-direction: column
-        align-items: center
-        padding: variables.$padding-medium
-        
-        >.external-link
-          color: #000
-          font-weight: 500
-          text-align: center
-          font-size: variables.$font-size-medium
+        text-align: center
+        font-size: variables.$font-size-medium
 
 @media (max-width: variables.$mobile-breakpoint)
   .architecture-section
     flex-direction: column
     padding: 0
     margin: 0
-    height: 960px
+    height: 900px
     overflow-x: hidden
     overflow-y: hidden
 
@@ -59,6 +56,7 @@
       position: relative
       height: 100%
       top: 0
+      flex-direction: column
 
       .image-container
         width: 100%
@@ -76,24 +74,19 @@
           display: flex
           align-items: center
           justify-content: center
+          
+          >.section-title
+            font-size: 42px
+            text-align: center
 
         .section-subtitle
           font-size: 20px !important
           text-align: center
-          padding: 0
-
-        .architecture-section-title
-          font-size: variables.$font-size-extra-large
-          color: #fff
-        
-        .-first
-          color: #FFF !important
-        
-        .section-subtitle
-          font-size: variables.$font-size-large
-          width: 100%
+          font-size: 16px
+          padding-bottom: variables.$padding-large
 
         .section-links
+          align-items: center
           .external-link
             color: #fff !important
 

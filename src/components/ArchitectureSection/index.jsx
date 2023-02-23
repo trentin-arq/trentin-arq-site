@@ -8,29 +8,26 @@ export default function ArchitectureSection(){
     <ScrollRevealProvider>
       <section className='architecture-section'>
         <div className='section-background'>
-          <div className='image-container'>
-            <img src='../images/arquitetura.jpg' alt='arquitetura' width={330} className='architecture-image'/>
-          </div>
-          <div className='section-infos'>
-            <div className='title-container'>
-              <h2 className='section-title architecture-section-title -first'>
-                Arq
-              </h2>
-              <h2 className='section-title architecture-section-title'>
-                uitetura
-              </h2>
+            <div className='image-container'>
+              <img src='../images/arquitetura.jpg' alt='arquitetura' width={400} className='architecture-image'/>
             </div>
-            <h3 className='section-subtitle'>
-              Criando e concretizando sonhos. Transformando o jeito de morar.
-            </h3>
-            <div className='section-links'>
-              <ActionButton
-                external={true}
-                buttonText="Planeje o seu imóvel"
-              />
-              <Link to={'/arquitetura'} className='external-link'>Conheça todos os projetos</Link>
+            <div className='section-infos'>
+              <div className='title-container'>
+                <h2 className='section-title'>
+                  Projetos Arquitetônicos
+                </h2>
+              </div>
+              <h3 className='section-subtitle'>
+                Projetos e execução de Residências únicas e exclusivas. Clique e conheça nossas casas assinadas
+              </h3>
+              <div className='section-links'>
+                <ActionButton
+                  external={true}
+                  buttonText="Planeje o seu imóvel"
+                />
+                <Link to={'/arquitetura'} className='external-link'>Conheça todos os projetos</Link>
+              </div>
             </div>
-          </div>
         </div>
       </section>
     </ScrollRevealProvider>

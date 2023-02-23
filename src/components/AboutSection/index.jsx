@@ -11,10 +11,10 @@ export default function AboutSection(){
           <p className='about-paragraph'>Com projetos de design autoral e alto nível de apresentação gráfica, buscamos também a todo tempo, a concretização em obra do sonho de cada cliente.</p>
           <ActionButton
             buttonLink="/sobre"
-            buttonText="Conheça nossa história"
+            buttonText="Conheça nosso trabalho"
           />
         </div>
-        <img src='../images/about-home.png' alt='planejamento' loading='lazy' width={350} className='about-section-image'/>
+        <img src='../images/about-home.png' alt='planejamento' loading='lazy' width={400} className='about-section-image'/>
       </section>
     </ScrollRevealProvider>
   )

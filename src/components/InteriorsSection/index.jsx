@@ -8,11 +8,11 @@ export default function InteriorsSection(){
     <ScrollRevealProvider>
       <section className='interiors-section'>
         <div className='image-container'>
-          <img src='../images/interiores.jpg' alt='interiores' width={330} className='section-image'/>
+          <img src='../images/interiores.jpg' alt='interiores' width={380} className='section-image'/>
         </div>
         <div className='infos-container'>
-          <h2 className='section-title'>Interiores</h2>
-          <h3 className='section-subtitle'>Sofisticando interiores. Transformando estilos de vida.</h3>
+          <h2 className='section-title'>Projetos de interiores</h2>
+          <h3 className='section-subtitle'>Conheça nossos Projetos de Interiores com alto padrão de design e funcionalidade.</h3>
 
           <div className='section-links'>
             <ActionButton

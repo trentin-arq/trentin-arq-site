@@ -57,8 +57,12 @@ export default function BannersCarousel(){
               <img src='../images/carousel/office.png' width={defaultWidthImage} loading='lazy' className='image-carousel'/>
               <div className='banner-infos'>
                 <h2 className='banner-title'>Criatividade e autenticidade</h2>
-                <p className='banner-paragraph'>Conheça todos os nosso projetos, pensados sob medida.</p>
-                <Link to={'/projetos'} className='banner-carousel-link'>Confira</Link>
+                <p className='banner-paragraph -criativity-paragraph'>Arquitetura para sua casa ou ambiente ficarem tal qual o idealizado</p>
+                <p className='banner-paragraph -criativity-paragraph'>Acompanhamos e participamos ativamente de todo o processo de construção - do início do projeto à entrega final para cada cliente</p>
+                <ActionButton
+                  external={true}
+                  buttonText="Solicite sua proposta"
+                />
               </div>
             </div>
           </div>
