@@ -9,7 +9,7 @@ export default function ArchitectureSection(){
       <section className='architecture-section'>
         <div className='section-background'>
             <div className='image-container'>
-              <img src='../images/arquitetura.jpg' alt='arquitetura' width={400} className='architecture-image'/>
+              <img src='../images/arquitetura.jpg' alt='arquitetura' width={350} className='architecture-image'/>
             </div>
             <div className='section-infos'>
               <div className='title-container'>

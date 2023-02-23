@@ -42,7 +42,7 @@ export default function BannersCarousel(){
         <SwiperSlide>
           <div  className='banner-carousel-item'>
             <div className='image-container'>
-              <img src='../images/carousel/living.png' width={defaultWidthImage} loading='lazy' className='image-carousel'/>
+              <img src='../images/carousel/interiores.jpg' width={defaultWidthImage} loading='lazy' className='image-carousel'/>
               <div className='banner-infos'>
                 <h2 className='banner-title'>Projetos de interiores</h2>
                 <p className='banner-paragraph'>Conheça nossos Projetos de Interiores com alto padrão de design e funcionalidade.</p>
@@ -60,8 +60,8 @@ export default function BannersCarousel(){
               <img src='../images/carousel/office.png' width={defaultWidthImage} loading='lazy' className='image-carousel'/>
               <div className='banner-infos'>
                 <h2 className='banner-title'>Criatividade e autenticidade</h2>
-                <p className='banner-paragraph -criativity-paragraph'>Arquitetura para sua casa ou ambiente ficarem tal qual o idealizado</p>
                 <p className='banner-paragraph -criativity-paragraph'>Acompanhamos e participamos ativamente de todo o processo de construção - do início do projeto à entrega final para cada cliente</p>
+                <p className='banner-paragraph -criativity-paragraph'>Arquitetura para sua casa ou ambiente ficarem tal qual o idealizado</p>
                 <ActionButton
                   external={true}
                   buttonText="Solicite sua proposta"

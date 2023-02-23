@@ -8,7 +8,7 @@ export default function InteriorsSection(){
     <ScrollRevealProvider>
       <section className='interiors-section'>
         <div className='image-container'>
-          <img src='../images/interiores.jpg' alt='interiores' width={380} className='section-image'/>
+          <img src='../images/interiores.png' alt='interiores' width={440} className='section-image'/>
         </div>
         <div className='infos-container'>
           <h2 className='section-title'>Interiores</h2>
