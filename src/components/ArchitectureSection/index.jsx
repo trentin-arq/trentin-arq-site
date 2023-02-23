@@ -14,11 +14,11 @@ export default function ArchitectureSection(){
             <div className='section-infos'>
               <div className='title-container'>
                 <h2 className='section-title'>
-                  Projetos Arquitetônicos
+                  Arquitetura
                 </h2>
               </div>
               <h3 className='section-subtitle'>
-                Projetos e execução de Residências únicas e exclusivas. Clique e conheça nossas casas assinadas
+                Criando e concretizando sonhos. Transformando o jeito de morar.
               </h3>
               <div className='section-links'>
                 <ActionButton

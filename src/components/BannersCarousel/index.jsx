@@ -29,8 +29,8 @@ export default function BannersCarousel(){
             <div className='image-container'>
               <img src='../images/carousel/casa_jm.jpg' width={defaultWidthImage} loading='lazy' className='image-carousel'/>
               <div className='banner-infos'>
-                <h2 className='banner-title'>Transformando moradias</h2>
-                <p className='banner-paragraph'>Estamos sempre em busca de transformar projetos e realizar sonhos.</p>
+                <h2 className='banner-title'>Projetos Arquitetônicos</h2>
+                <p className='banner-paragraph'> Projetos e execução de Residências únicas e exclusivas. Clique e conheça nossas casas assinadas.</p>
                 <ActionButton
                   external={true}
                   buttonText="Realize seu projeto"
@@ -44,9 +44,12 @@ export default function BannersCarousel(){
             <div className='image-container'>
               <img src='../images/carousel/living.png' width={defaultWidthImage} loading='lazy' className='image-carousel'/>
               <div className='banner-infos'>
-                <h2 className='banner-title'>Design de interiores</h2>
-                <p className='banner-paragraph'>Trazendo personalidade, novas experiências e conforto</p>
-                <Link to={'/interiores'} className='banner-carousel-link'>Conheça todos os designs</Link>
+                <h2 className='banner-title'>Projetos de interiores</h2>
+                <p className='banner-paragraph'>Conheça nossos Projetos de Interiores com alto padrão de design e funcionalidade.</p>
+                <ActionButton
+                  buttonText="Conheça todos os designs"
+                  buttonLink="/interiores"
+                />
               </div>
             </div>
           </div>
