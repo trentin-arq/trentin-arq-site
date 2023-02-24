@@ -17,7 +17,7 @@ export default function AboutPageImages(){
         <span className="definition-text">Publicidade e Propaganda - Unisinos (2020)</span>
         <span className="definition-text">Pós Graduação em Gestão Empresarial - Unisinos (2022)</span>
       </div>
-      <div className="definitions">
+     {/*  <div className="definitions">
         <img src="" alt="" className="about-image"/>
         <h3 className="name">Polenta</h3>
         <span className="definition-text">Mascote</span>
@@ -26,7 +26,7 @@ export default function AboutPageImages(){
         <img src="" alt="" className="about-image"/>
         <h3 className="name">Mumu</h3>
         <span className="definition-text">Mascote</span>
-      </div>
+      </div> */}
     </div>
   )
 }
