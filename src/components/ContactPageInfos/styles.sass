@@ -1,0 +1,45 @@
+@use '../../styles/sass/variables'
+
+.contact-infos
+  display: flex
+  flex-direction: column
+  gap: 18px
+  padding: variables.$padding-large
+  width: 50%
+
+  .contact-title
+    font-size: variables.$font-size-large
+    padding-bottom: variables.$padding-medium
+    text-align: center
+  
+  .contact-paragraph
+    font-size: 20px
+    text-align: center
+
+  .contact-social-medias
+    display: flex
+    width: 100%
+    gap: 14px
+    align-items: center
+    justify-content: center
+  
+  .contact-adress
+    display: flex
+    flex-direction: column
+    width: 100%
+    gap: 12px
+    align-items: center
+    justify-content: center
+    text-align: center
+
+@media (max-width: variables.$mobile-breakpoint)
+  .contact-infos
+    width: 100%
+    text-align: center
+
+    .contact-adress
+      align-items: center
+      gap: 0
+      
+      .adress-icon
+        width: 40px

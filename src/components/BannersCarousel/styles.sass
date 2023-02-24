@@ -1,0 +1,113 @@
+@use '../../styles/sass/variables'
+
+.swiper
+  height: 470px
+
+.swiper-button-prev, .swiper-button-next
+  display: none
+
+.swiper-pagination-bullet
+  color: #000
+  background-color: #000
+
+.banners-carousel
+  padding: variables.$padding-medium
+  margin-bottom: 100px
+
+  .banner-carousel-item
+    padding: 0 variables.$padding-extra-large
+
+    >.image-container
+      display: flex
+      postition: relative
+
+      >.banner-infos
+        padding: 0 variables.$padding-large
+        display: flex
+        justify-content: center
+        flex-direction: column
+      
+        .banner-title
+          font-family: variables.$secondary-font
+          font-weight: 600
+          font-size: 72px
+        
+        .banner-paragraph
+          max-width: 500px
+          font-size: 28px
+          font-weight: 300
+          margin-bottom: 8px
+          margin-top: variables.$margin-small
+
+        .-criativity-paragraph
+          font-size: 20px !important
+          margin-bottom: 10px
+        
+        .banner-carousel-link
+          color: #000
+          font-size: 20px
+          font-weight: 700
+          margin: variables.$margin-medium 0
+        
+        .-button
+          background-color: variables.$blue-900
+          text-decoration: none
+          padding: 8px
+          width: 300px
+          text-align: center
+          transition: .4s
+          color: #fff
+        
+        .-button:hover
+          border-radius: 8px
+          transform: scale(1.05)
+        
+        
+
+@media(max-width: variables.$mobile-breakpoint)
+  .swiper
+    height: 632px
+    margin-top: variables.$padding-medium
+  
+  .swiper-button-prev, .swiper-button-next
+    display: none
+
+  .banners-carousel
+    height: 700px
+    margin-bottom: 0 !important
+
+    .banner-carousel-item
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+
+      .image-container
+        display: flex
+        flex-direction: column
+      
+        .image-carousel
+          width: 300px
+
+        .banner-infos
+          position: inherit
+          padding: 0 !important
+
+          .banner-title
+            font-size: 36px
+            padding-top: variables.$padding-medium
+          
+          .banner-paragraph
+            font-size: variables.$font-size-medium
+            position: inherit
+            width: 200px
+            margin-bottom: 20px
+          
+          .-criativity-paragraph
+            font-size: 14px !important
+            width: 100%
+            margin-bottom: 4px
+          
+          .banner-carousel-link
+            position: inherit
+            font-size: variables.$font-size-medium

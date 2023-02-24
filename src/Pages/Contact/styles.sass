@@ -1,0 +1,21 @@
+@use '../../styles/sass/variables'
+
+.contact-section
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.local
+  margin: auto
+  text-align: center
+  padding: variables.$padding-large 0
+  h3
+    font-size: 32px
+
+@media (max-width: variables.$mobile-breakpoint)
+  .contact-section
+    flex-direction: column
+    flex-wrap: wrap
+
+    .local
+      display: none

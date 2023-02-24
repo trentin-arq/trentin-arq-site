@@ -1,0 +1,83 @@
+@use '../../styles/sass/variables'
+
+.interiors-section
+  display: flex
+  flex-direction: row-reverse
+  padding: variables.$padding-extra-large
+  justify-content: space-between
+
+  .section-image
+    box-shadow: 3px 3px 9px #0000005a
+
+  .infos-container
+    padding-right: variables.$padding-large
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    .section-subtitle
+      font-size: 32px
+      width: 600px
+      padding: variables.$padding-large 0
+      font-weight: 500
+
+    .section-links
+      display: flex
+      flex-direction: column
+      gap: 8px
+      align-items: flex-start
+
+      .redirect-link
+          background-color: #000
+          padding: variables.$padding-small
+          text-align: center
+          color: #fff
+          text-decoration: none
+          font-weight: 500
+          transition: .4s
+          width: 450px
+          font-size: 20px
+      
+      .redirect-link:hover
+        background-color: variables.$blue-900
+        border-radius: 8px
+
+      .external-link
+        color: #000
+        font-weight: 500
+        width: 450px
+        font-size: 18px
+
+@media (max-width: variables.$mobile-breakpoint)
+  .interiors-section
+    display: flex
+    flex-direction: column
+    margin: 0 !important
+    padding: 0 !important
+    overflow-x: hidden
+    text-align: center
+
+    .image-container
+      width: 100%
+
+      .section-image
+        width: 100%
+    
+    .infos-container
+      padding: variables.$padding-medium
+
+      .section-title
+        font-size: variables.$font-size-extra-large
+
+      .section-subtitle
+        font-size: variables.$font-size-large !important
+        width: 100% !important
+      
+      .section-links
+        align-items: center
+        text-align: left
+        .redirect-link
+          width: 300px
+        
+        .external-link
+          text-align: center

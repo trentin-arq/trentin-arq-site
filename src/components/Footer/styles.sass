@@ -1,0 +1,92 @@
+@use '../../styles/sass/variables'
+  
+.footer
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  background-color: black
+  color: white
+  gap: 28px
+  align-items: center
+  justify-content: space-between
+  width: 100%
+  padding: variables.$padding-medium
+
+  .logo-container
+    display: flex
+    flex-direction: column
+    justify-self: flex-start
+    align-items: center
+
+  .footer-contacts
+    display: flex
+    flex-direction: column
+    gap: 12px
+    align-items: center
+    justify-content: center
+
+    >.social-links
+      display: flex
+      gap: 16px
+  
+  .infos-container
+    display: flex
+    flex-direction: column
+    line-height: 30px
+    font-weight: 500
+    font-size: 16px
+
+    >.-info
+      display: flex
+      gap: 8px
+      align-items: center
+    
+    .adress
+      max-width: 540px
+      font-size: 12px
+  
+  .agency-container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+
+    .agency
+      display: flex
+      align-items: center
+      gap: 8px
+
+      .agency-text
+        font-size: variables.$font-size-small
+    
+    .terms
+      color: variables.$gray-300
+      font-size: variables.$font-size-small
+
+@media (max-width: variables.$mobile-breakpoint)
+  .footer
+    align-items: center
+    justify-content: center
+
+    .logo-container
+      align-items: center
+      justify-content: center
+  
+    .agency-container
+      justify-content: center
+      align-items: center
+      text-align: center
+      flex-direction: column-reverse
+      gap: 18px
+    
+    .infos-container
+      justify-content: center
+      align-items: center
+
+    .adress
+      text-align: center
+      font-size: 14px !important
+
+    .footer-contacts
+      text-align: center
+      justify-content: center

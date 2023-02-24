@@ -1,0 +1,63 @@
+@use '../../styles/sass/variables'
+
+.about-section
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  padding: variables.$padding-extra-large
+  margin-top: 50px
+
+  .infos-container
+    padding: variables.$padding-large
+    margin-right: variables.$margin-extra-large
+    display: flex
+    flex-direction: column
+    gap: 16px
+    justify-content: center
+    align-items: flex-end
+
+    .about-title
+      font-family: variables.$secondary-font
+      font-size: 48px
+      font-weight: 600
+    
+    .about-paragraph
+      width: 600px
+      text-align: right
+      font-size: 18px
+
+    .about-link-redirect
+      color: #fff
+      background-color: #000
+      text-decoration: none
+      padding: variables.$padding-small
+      font-weight: 400
+      font-size: 18px
+      transition: .4s
+    
+    .about-link-redirect:hover
+      background-color: variables.$blue-900
+      border-radius: 8px
+
+@media (max-width: variables.$mobile-breakpoint)
+  .about-section
+    margin-top: 34px !important
+    padding: variables.$padding-medium
+    flex-direction: column
+    align-content: center
+    justify-content: center
+    margin: 0
+
+    .infos-container
+      width: 100%
+      padding: 0
+
+      .about-paragraph
+        width: 90%
+        font-size: variables.$font-size-medium
+      
+    .about-section-image
+      margin-top: variables.$margin-large
+      width: 287px
+
+

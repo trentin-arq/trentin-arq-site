@@ -1,0 +1,44 @@
+@use '../../styles/sass/variables'
+
+.project-details
+  padding: 0 variables.$padding-extra-large variables.$padding-extra-large variables.$padding-extra-large
+  .project-detail-title
+    font-size: 64px
+    padding-top: variables.$padding-medium
+  
+  .project-adress
+    display: flex
+    gap: 4px
+    align-items: center
+    padding: variables.$padding-medium 0
+    font-weight: 500
+    font-size: 16px
+  
+  .principal-description
+    padding: variables.$padding-large 0
+    margin-bottom: 20px
+    font-size: 18px
+    font-weight: 500
+    max-width: 940px
+
+@media (max-width: variables.$mobile-breakpoint)
+  .project-details
+    padding: variables.$padding-medium !important
+
+    .project-detail-title
+      font-size: 48px !important
+      text-align: center
+
+    .project-adress
+      flex-direction: column
+      text-align: center
+
+    .principal-description
+      text-align: center
+
+    .mobile-image-gallery
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      gap: 16px
