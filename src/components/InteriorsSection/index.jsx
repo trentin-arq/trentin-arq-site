@@ -19,7 +19,7 @@ export default function InteriorsSection(){
               external={true}
               buttonText="Transforme seus ambientes"
             />
-            <Link to={'/projetos'} className='external-link'>Veja todos os designs</Link>
+            <Link to={'/projetos'} className='external-link'>Veja todos os projetos</Link>
           </div>
         </div>
       </section>

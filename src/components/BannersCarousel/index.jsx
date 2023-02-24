@@ -27,7 +27,7 @@ export default function BannersCarousel(){
         <SwiperSlide>
           <div  className='banner-carousel-item'>
             <div className='image-container'>
-              <img src='../images/carousel/casa_jm.jpg' width={defaultWidthImage} loading='lazy' className='image-carousel'/>
+              <img src='../images/carousel/casa_jm.png' width={defaultWidthImage} loading='lazy' className='image-carousel'/>
               <div className='banner-infos'>
                 <h2 className='banner-title'>Projetos Arquitetônicos</h2>
                 <p className='banner-paragraph'> Projetos e execução de Residências únicas e exclusivas. Clique e conheça nossas casas assinadas.</p>
