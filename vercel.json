@@ -1,0 +1,12 @@
+{
+  "routes": [
+    { "src": "/", "dest": "/" },
+    { "src": "/projetos", "dest": "/" },
+    { "src": "/projetos:id", "dest": "/" },
+    { "src": "/arquitetura", "dest": "/" },
+    { "src": "/interiores", "dest": "/" },
+    { "src": "/em-desenvolvimento", "dest": "/" },
+    { "src": "/sobre", "dest": "/" },
+    { "src": "/contato", "dest": "/" }
+  ]
+}
