@@ -47,7 +47,7 @@ export default function BannersCarousel(){
                 <h2 className='banner-title'>Projetos de interiores</h2>
                 <p className='banner-paragraph'>Conheça nossos Projetos de Interiores com alto padrão de design e funcionalidade.</p>
                 <ActionButton
-                  buttonText="Conheça todos os designs"
+                  buttonText="Conheça todos os projetos"
                   buttonLink="/interiores"
                 />
               </div>
