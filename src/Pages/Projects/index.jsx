@@ -9,16 +9,13 @@ import "./styles.sass"
 
 const GET_PROJECTS = gql`
   query getProjects{
-    projects{
+    projects(first: 1000){
       id
       title
       thumb {
         url
       }
       adress
-      images {
-        url
-      }
       principalDescription
       category
     }

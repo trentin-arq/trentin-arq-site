@@ -12,7 +12,7 @@ const GET_PROJECT = gql`
       id
       title
       adress
-      images {
+      images(first: 100) {
         url
       }
       principalDescription
