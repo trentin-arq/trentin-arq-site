@@ -28,7 +28,7 @@ export default function Projects(){
   useEffect(() => {
     window.scrollTo(0,0)
   },[])
-
+  
   return(
     <main>
       <ScrollRevealProvider>  
@@ -42,7 +42,7 @@ export default function Projects(){
                   <ScrollRevealProvider key={element.id}>
                     <Link to={`/projetos/${element.id}`} className="project-card"> 
                       <div className="project-card-infos">
-                        <img src={element.thumb.url} alt="thumb" className="project-thumb" width={350}/>
+                        <img src={element.thumb && element.thumb.url} alt="thumb" className="project-thumb" width={350} loading="lazy"/>
                         <div className="project-title-container">
                           <h2 className="project-card-title">{element.title}</h2>
                           <FaArrowRight size={26} color={"#000"} className="project-icon"/>
