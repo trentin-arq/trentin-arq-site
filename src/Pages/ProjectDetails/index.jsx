@@ -4,6 +4,7 @@ import { FaMapMarkerAlt } from "react-icons/fa"
 import ImageList from "@mui/material/ImageList"
 import ImageListItem from "@mui/material/ImageListItem"
 import ScrollRevealProvider from "../../components/ScrollRevealProvider"
+import { Image } from "antd"
 import "./styles.sass"
 
 const GET_PROJECT = gql`
@@ -55,7 +56,7 @@ export default function ProjectDetails(){
               {data.projects[0].images.map((element, index) => {
                 return(
                   <ScrollRevealProvider key={index}>
-                    <img src={element.url} loading="lazy" className="mobile-image" width={330}/>
+                    <Image src={element.url} loading="lazy" width={330} key={index} rootClassName="image-container"/> 
                   </ScrollRevealProvider>
                 )
               })}
@@ -63,13 +64,13 @@ export default function ProjectDetails(){
           ) : (
             <ScrollRevealProvider>
               <ImageList variant="masonry" cols={3} gap={8}>
-                {data.projects[0].images.map((element, index) => {
-                  return(
-                      <ImageListItem key={index}>
-                        <img src={element.url} loading="lazy" width={500}/>
-                      </ImageListItem>
-                  )
-                })}
+                <Image.PreviewGroup>
+                  {data.projects[0].images.map((element, index) => {
+                    return(
+                      <Image src={element.url} loading="lazy" width={450} key={index} rootClassName="image-container"/>  
+                    )
+                  })}
+                </Image.PreviewGroup>
               </ImageList>
             </ScrollRevealProvider>
           )}
