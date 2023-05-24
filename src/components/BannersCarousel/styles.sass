@@ -13,15 +13,6 @@
     position: relative
     transition: .4s
 
-    &:hover
-      transition: .4s
-
-      .infos-container
-        display: block
-        background-color: #00000092
-        cursor: pointer
-        transition: .4s
-
     .infos-container
       position: absolute
       z-index: 999
@@ -29,7 +20,9 @@
       left: 0
       bottom: 0
       right: 0
-      display: none
+      display: block
+      background-color: #00000082
+      cursor: pointer
       transition: .4s
       color: #fff
 
@@ -46,56 +39,23 @@
           font-size: 64px
         
         >.description
-          width: 680px
+          max-width: 680px
           font-weight: 500
           font-size: 18px
 
-
-        
-        
-
-@media(max-width: variables.$mobile-breakpoint)
-  .swiper
-    margin-top: variables.$padding-medium
-  
-  .swiper-button-prev, .swiper-button-next
-    display: none
-
+@media (max-width: variables.$mobile-breakpoint)
   .banners-carousel
     margin-bottom: 0 !important
 
-    .banner-carousel-item
-      display: flex
-      flex-direction: column
-      align-items: center
-      justify-content: center
+    .infos-container
+      >.infos
+        padding: variables.$padding-medium !important
+        align-items: center
+        gap: 28px !important
 
-      .image-container
-        display: flex
-        flex-direction: column
-      
-        .image-carousel
-          width: 300px
-
-        .banner-infos
-          position: inherit
-          padding: 0 !important
-
-          .banner-title
-            font-size: 36px
-            padding-top: variables.$padding-medium
-          
-          .banner-paragraph
-            font-size: variables.$font-size-medium
-            position: inherit
-            width: 200px
-            margin-bottom: 20px
-          
-          .-criativity-paragraph
-            font-size: 14px !important
-            width: 100%
-            margin-bottom: 4px
-          
-          .banner-carousel-link
-            position: inherit
-            font-size: variables.$font-size-medium
+        >.title
+          font-size: 42px !important
+          text-align: center
+        
+        >.description
+          text-align: center

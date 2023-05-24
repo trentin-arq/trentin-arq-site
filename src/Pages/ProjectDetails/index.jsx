@@ -67,7 +67,7 @@ export default function ProjectDetails(){
                 <Image.PreviewGroup>
                   {data.projects[0].images.map((element, index) => {
                     return(
-                      <Image src={element.url} loading="lazy" width={450} key={index} rootClassName="image-container"/>  
+                      <Image src={element.url} loading="lazy" width={440} key={index} rootClassName="image-container"/>  
                     )
                   })}
                 </Image.PreviewGroup>

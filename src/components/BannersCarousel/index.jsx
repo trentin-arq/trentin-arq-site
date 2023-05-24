@@ -53,8 +53,7 @@ export default function BannersCarousel(){
       <Swiper
         modules={[Autoplay, EffectFade, Pagination]}
         autoplay={{
-          delay: 5000,
-          pauseOnMouseEnter: true
+          delay: 7000,
         }}
         loop={true}
         pagination={{ clickable: true }}
