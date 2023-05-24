@@ -1,79 +1,67 @@
 @use '../../styles/sass/variables'
 
-.swiper
-  height: 470px
-
 .swiper-button-prev, .swiper-button-next
   display: none
 
 .swiper-pagination-bullet
-  color: #000
-  background-color: #000
+  color: #fff
+  background-color: #fff
 
 .banners-carousel
-  padding: variables.$padding-medium
-  margin-bottom: 100px
+  transition: .4s
+  .wrapper-container
+    position: relative
+    transition: .4s
 
-  .banner-carousel-item
-    padding: 0 variables.$padding-extra-large
+    &:hover
+      transition: .4s
 
-    >.image-container
-      display: flex
-      postition: relative
+      .infos-container
+        display: block
+        background-color: #00000092
+        cursor: pointer
+        transition: .4s
 
-      >.banner-infos
-        padding: 0 variables.$padding-large
+    .infos-container
+      position: absolute
+      z-index: 999
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      display: none
+      transition: .4s
+      color: #fff
+
+      >.infos
+        max-width: 100%
+        height: 100%
         display: flex
-        justify-content: center
         flex-direction: column
-      
-        .banner-title
-          font-family: variables.$secondary-font
-          font-weight: 600
-          font-size: 72px
+        gap: 20px
+        justify-content: center
+        padding: variables.$padding-large
+        transition: .4s
+        >.title
+          font-size: 64px
         
-        .banner-paragraph
-          max-width: 500px
-          font-size: 28px
-          font-weight: 300
-          margin-bottom: 8px
-          margin-top: variables.$margin-small
+        >.description
+          width: 680px
+          font-weight: 500
+          font-size: 18px
 
-        .-criativity-paragraph
-          font-size: 20px !important
-          margin-bottom: 10px
-        
-        .banner-carousel-link
-          color: #000
-          font-size: 20px
-          font-weight: 700
-          margin: variables.$margin-medium 0
-        
-        .-button
-          background-color: variables.$blue-900
-          text-decoration: none
-          padding: 8px
-          width: 300px
-          text-align: center
-          transition: .4s
-          color: #fff
-        
-        .-button:hover
-          border-radius: 8px
-          transform: scale(1.05)
+
         
         
 
 @media(max-width: variables.$mobile-breakpoint)
   .swiper
-    height: 632px
     margin-top: variables.$padding-medium
   
   .swiper-button-prev, .swiper-button-next
     display: none
 
   .banners-carousel
-    height: 700px
     margin-bottom: 0 !important
 
     .banner-carousel-item
