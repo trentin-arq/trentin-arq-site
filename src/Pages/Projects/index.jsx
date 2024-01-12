@@ -9,7 +9,7 @@ import "./styles.sass"
 
 const GET_PROJECTS = gql`
   query getProjects{
-    projects(first: 1000){
+    projects(first: 1000, orderBy: updatedAt_DESC){
       id
       title
       thumb {

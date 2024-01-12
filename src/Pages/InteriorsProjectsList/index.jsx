@@ -9,7 +9,7 @@ import "./styles.sass"
 
 const GET_PROJECTS = gql`
   query getProjects{
-    projects(where: {category: "interiores"}) {
+    projects(where: {category: "interiores"}, orderBy: updatedAt_DESC) {
       id
       title
       thumb {

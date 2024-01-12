@@ -64,13 +64,13 @@ export default function ProjectDetails(){
           ) : (
             <ScrollRevealProvider>
               <ImageList variant="masonry" cols={3} gap={8}>
-                <Image.PreviewGroup>
                   {data.projects[0].images.map((element, index) => {
                     return(
-                      <Image src={element.url} loading="lazy" width={440} key={index} rootClassName="image-container"/>  
+                    <ImageListItem key={index}>
+                      <Image src={element.url} loading="lazy" key={index} rootClassName="image-container"/>  
+                    </ImageListItem>
                     )
                   })}
-                </Image.PreviewGroup>
               </ImageList>
             </ScrollRevealProvider>
           )}
