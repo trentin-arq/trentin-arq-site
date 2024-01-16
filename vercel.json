@@ -1,12 +1,12 @@
 {
   "rewrites": [
-    { "src": "/", "destination": "/" },
-    { "src": "/projetos", "destination": "/" },
-    { "src": "/projetos/([^/]+)", "destination": "/projetos/:id" },
-    { "src": "/arquitetura", "destination": "/" },
-    { "src": "/interiores", "destination": "/" },
-    { "src": "/em-desenvolvimento", "destination": "/" },
-    { "src": "/sobre", "destination": "/" },
-    { "src": "/contato", "destination": "/" }
+    { "source": "/", "destination": "/" },
+    { "source": "/projetos", "destination": "/" },
+    { "source": "/projetos/([^/]+)", "destination": "/projetos/:id" },
+    { "source": "/arquitetura", "destination": "/" },
+    { "source": "/interiores", "destination": "/" },
+    { "source": "/em-desenvolvimento", "destination": "/" },
+    { "source": "/sobre", "destination": "/" },
+    { "source": "/contato", "destination": "/" }
   ]
 }
