@@ -1,13 +1,12 @@
 {
-  "routes": [
-    { "src": "/", "dest": "/" },
-    { "src": "/projetos", "dest": "/" },
-    { "src": "/projetos/([^/]+)", "dest": "/projetos/:id" },
-    { "src": "/projetos/clnhzbz8w1x5p0akmsje3akgp", "dest": "/" },
-    { "src": "/arquitetura", "dest": "/" },
-    { "src": "/interiores", "dest": "/" },
-    { "src": "/em-desenvolvimento", "dest": "/" },
-    { "src": "/sobre", "dest": "/" },
-    { "src": "/contato", "dest": "/" }
+  "rewrites": [
+    { "src": "/", "destination": "/" },
+    { "src": "/projetos", "destination": "/" },
+    { "src": "/projetos/([^/]+)", "destination": "/projetos/:id" },
+    { "src": "/arquitetura", "destination": "/" },
+    { "src": "/interiores", "destination": "/" },
+    { "src": "/em-desenvolvimento", "destination": "/" },
+    { "src": "/sobre", "destination": "/" },
+    { "src": "/contato", "destination": "/" }
   ]
 }
