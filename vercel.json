@@ -3,6 +3,7 @@
     { "src": "/", "dest": "/" },
     { "src": "/projetos", "dest": "/" },
     { "src": "/projetos/([^/]+)", "dest": "/projetos/:id" },
+    { "src": "/projetos/clnhzbz8w1x5p0akmsje3akgp", "dest": "/" },
     { "src": "/arquitetura", "dest": "/" },
     { "src": "/interiores", "dest": "/" },
     { "src": "/em-desenvolvimento", "dest": "/" },
