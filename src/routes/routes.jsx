@@ -9,7 +9,7 @@ import Footer from '../components/Footer'
 import ArchitectureProjectsList from '../Pages/ArchitectureProjectsList'
 import InteriorsProjectsList from '../Pages/InteriorsProjectsList'
 import DevelopmentProjects from '../Pages/DevelopmentProjects'
-import ProjectDetails from '../Pages/ProjectDetails'
+import ProjectDetails from '../Pages/ProjectDetails/[id]'
 
 export default function RouterApp(){
   return(
