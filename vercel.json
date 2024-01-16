@@ -2,7 +2,7 @@
   "rewrites": [
     { "source": "/", "destination": "/" },
     { "source": "/projetos", "destination": "/" },
-    { "source": "/projetos/([^/]+)", "destination": "/projetos/:id" },
+    { "source": "/projetos/([^/]+)", "destination": "/projetos/([^/]+)" },
     { "source": "/arquitetura", "destination": "/" },
     { "source": "/interiores", "destination": "/" },
     { "source": "/em-desenvolvimento", "destination": "/" },
