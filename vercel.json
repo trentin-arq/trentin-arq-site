@@ -2,7 +2,8 @@
   "rewrites": [
     { "source": "/", "destination": "/" },
     { "source": "/projetos", "destination": "/" },
-    { "source": "/projetos/([^/]+)", "destination": "/projetos/([^/]+)" },
+    { "source": "/projetos/([^/]+)", "destination": "/" },
+    { "source": "/projetos/clnhzbz8w1x5p0akmsje3akgp", "destination": "/" },
     { "source": "/arquitetura", "destination": "/" },
     { "source": "/interiores", "destination": "/" },
     { "source": "/em-desenvolvimento", "destination": "/" },
